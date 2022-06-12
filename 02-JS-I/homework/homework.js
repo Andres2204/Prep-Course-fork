@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 0;
+const nuevoModulo = 21 % 3 === 0;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -206,7 +206,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola "+nombre+"!";
+  return `Hola ${nombre}!`;
   
 }
 
@@ -251,12 +251,12 @@ function esVocal(letra){
   const vocales = ["a","e","i","o","u"];
   if (letra.length == 1 && isNaN(letra)) {
       if (vocales.includes(letra)) {
-        return "Dato correcto.";  
+        return "Es vocal";  
       } else {
-        return "Dato incorrecto.";
+        return "Dato incorrecto";
       }
   } else {
-    return "Dato incorrecto.";
+    return "Dato incorrecto";
 }
 }
 
