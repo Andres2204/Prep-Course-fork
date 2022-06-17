@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    /*VARIABLES*/
+    --primary-color: #ff0096;
+    --secundary-color: rgb(81, 15, 237);
+    --backgroud-color:#0f0112;
+    --font-color: rgb(117, 152, 198);
+}
+
+body, html {
+    font-size: 20px;
+    font-family: Arial, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("fondoCreditos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    overflow-y: hidden;
+
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--backgroud-color);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+}
+
+.form-item {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    margin: 10px;
+    color: var(--font-color);
+}
+
+input {
+    outline: none;
+    color: var(--font-color);
+    font-size: 18px;
+    padding: 0 15px;
+    height: 3em;
+    background-color: var(--backgroud-color);
+    border: solid var(--primary-color) 2px ;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+input:focus {
+    border-color: #ed7bbd;
+}
+
+.divlogo {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--secundary-color);
+}
+
+hr {
+    margin: 0 20px;
+    border-color: var(--font-color);
+}
+
+h2 {
+    margin-top: 15px;
+    color: var(--font-color);
+}
+
+button {
+    padding: 5px;
+    font-size: 18px;
+    color: var(--font-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--backgroud-color);
+
+    outline: none;
+    transition: all .2s;
+}
+button:focus {
+    border-color: #ed7bbd;
+}
